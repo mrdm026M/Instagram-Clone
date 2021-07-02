@@ -4,5 +4,12 @@
   .navbar {
     display: flex;
     justify-content: space-between;
+
+    .nav-links {
+      .nav-link {
+        display: flex;
+        gap: 1rem;
+      }
+    }
   }
 }
