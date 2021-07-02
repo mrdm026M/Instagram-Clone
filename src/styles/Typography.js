@@ -29,17 +29,17 @@ const Typography = createGlobalStyle`
     font-style: normal;
   }
   @font-face {
-    font-family: 'PB';
+    font-family: 'RB';
     src: url(${RobotoBold});
     font-style: normal;
   }
   @font-face {
-    font-family: 'PM';
+    font-family: 'RM';
     src: url(${RobotoMedium});
     font-style: normal;
   }
   @font-face {
-    font-family: 'PR';
+    font-family: 'RR';
     src: url(${RobotoRegular});
     font-style: normal;
   }
