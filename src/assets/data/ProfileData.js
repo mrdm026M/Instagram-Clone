@@ -1,6 +1,8 @@
+import one from "../images/1.png";
+
 const profile = [
   {
-    image: "",
+    image: one,
     imageAlt: "profile-image",
     name: "Dhruv Maheshwari",
     username: "mrdm026",
