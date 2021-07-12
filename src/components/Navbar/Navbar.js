@@ -1,4 +1,8 @@
 import React from "react";
+import { AiOutlineComment, AiOutlineHome } from "react-icons/ai";
+import { IoMdNotificationsOutline } from "react-icons/io";
+import { IoSettingsOutline } from "react-icons/io5";
+import { RiMovie2Line } from "react-icons/ri";
 import "./Navbar.scss";
 
 export const Navbar = () => {
@@ -13,11 +17,21 @@ export const Navbar = () => {
         </div>
         <div className="nav-links">
           <ul className="nav-link">
-            <li>Home</li>
-            <li>Feeds</li>
-            <li>Messages</li>
-            <li>Notification</li>
-            <li>Reels</li>
+            <li>
+              <AiOutlineHome />
+            </li>
+            <li>
+              <AiOutlineComment />
+            </li>
+            <li>
+              <IoMdNotificationsOutline />
+            </li>
+            <li>
+              <RiMovie2Line />
+            </li>
+            <li>
+              <IoSettingsOutline />
+            </li>
           </ul>
         </div>
       </div>

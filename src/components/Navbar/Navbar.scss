@@ -1,14 +1,21 @@
 .navbar__section {
-  padding: 1rem 0;
+  border: 2px solid red;
+  padding: 1rem;
 
   .navbar {
     display: flex;
+    align-items: center;
     justify-content: space-between;
 
     .nav-links {
       .nav-link {
         display: flex;
         gap: 1rem;
+
+        li {
+          display: flex;
+          font-size: 1.6rem;
+        }
       }
     }
   }
