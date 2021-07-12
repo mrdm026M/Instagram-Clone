@@ -1,7 +1,169 @@
 .profile__section {
   border: 2px solid green;
   margin: 0.75rem;
-  padding: 1rem 0;
+  padding: 2.5rem 1rem;
   border-radius: 20px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+
+  .user-info {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 10rem;
+      height: 10rem;
+      border-radius: 100%;
+    }
+
+    h2 {
+      margin-top: 0.55rem;
+      font-size: 1.5rem;
+      font-family: "MB";
+      letter-spacing: -0.025rem;
+    }
+
+    p {
+      font-size: 1.05rem;
+      font-family: "RM";
+      font-weight: 500;
+      color: var(--grey-500);
+      letter-spacing: 0.025rem;
+    }
+  }
+
+  .user-follow-info {
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+
+    hr {
+      width: 0.15rem;
+      height: 25px;
+      border: none;
+      border-radius: 50px;
+      background-color: var(--grey-800);
+    }
+
+    .box {
+      width: 5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      h2 {
+        font-size: 1.15rem;
+        font-family: "MB";
+      }
+
+      p {
+        font-size: 0.85rem;
+        font-family: "RM";
+        font-weight: 500;
+        color: var(--grey-500);
+        letter-spacing: 0.025rem;
+      }
+    }
+  }
+
+  .user-description {
+    padding: 0.5rem;
+
+    h2 {
+      font-size: 1.15rem;
+      font-family: "MB";
+      letter-spacing: -0.015rem;
+    }
+
+    p {
+      margin-top: 0.35rem;
+      font-size: 0.9rem;
+      font-family: "RM";
+      font-weight: 500;
+      color: var(--grey-800);
+      letter-spacing: 0.025rem;
+    }
+  }
+
+  .user-story-highlights {
+    padding: 0.5rem;
+
+    h2 {
+      font-size: 1.15rem;
+      font-family: "MB";
+      letter-spacing: -0.015rem;
+    }
+
+    .content {
+      margin-top: 0.75rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+
+      .story {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.25rem;
+
+        .profile__img-box {
+          padding: 0.25rem;
+          border-radius: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          img {
+            width: 4rem;
+            height: 4rem;
+            border-radius: 100%;
+          }
+        }
+
+        h2 {
+          font-size: 0.75rem;
+          font-family: "MR";
+        }
+      }
+    }
+  }
+
+  .user-btn {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    // border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    a {
+      width: 90%;
+
+      button {
+        border: none;
+        border-radius: 8px;
+        background-color: var(--grey-800);
+        color: var(--grey-0);
+        width: 100%;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        font-size: 1.05rem;
+        font-family: "MM";
+        font-weight: 500;
+        cursor: pointer;
+      }
+    }
+  }
 }
