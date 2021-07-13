@@ -3,6 +3,7 @@ import { AiOutlineComment, AiOutlineHome } from "react-icons/ai";
 import { IoMdNotificationsOutline } from "react-icons/io";
 import { IoSettingsOutline } from "react-icons/io5";
 import { RiMovie2Line } from "react-icons/ri";
+import logoThree from "../../assets/images/logo-3.png";
 import "./Navbar.scss";
 
 export const Navbar = () => {
@@ -10,7 +11,7 @@ export const Navbar = () => {
     <div className="navbar__section">
       <div className="navbar">
         <div className="nav-logo">
-          <h2>Instagram</h2>
+          <img src={logoThree} alt="instagram logo" className="logo" />
         </div>
         <div className="search">
           <input type="text" name="search" id="search" placeholder="Search" />

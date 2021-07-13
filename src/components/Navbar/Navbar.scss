@@ -1,5 +1,5 @@
 .navbar__section {
-  border: 2px solid red;
+  // border: 2px solid red;
   padding: 1rem;
 
   .navbar {
@@ -7,14 +7,46 @@
     align-items: center;
     justify-content: space-between;
 
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      .logo {
+        width: 10rem;
+      }
+    }
+
+    .search {
+      // border: 2px solid red;
+
+      input {
+        width: 25rem;
+        height: 2.5rem;
+        outline: none;
+        border: none;
+        border-radius: 50px;
+        background-color: var(--grey-100);
+        padding: 1rem 1.5rem;
+        font-size: 1.05rem;
+        font-family: "RM";
+        letter-spacing: 0.025rem;
+        color: var(--grey-700);
+
+        &::placeholder {
+          font-family: "RR";
+          color: var(--grey-500);
+        }
+      }
+    }
+
     .nav-links {
       .nav-link {
         display: flex;
-        gap: 1rem;
+        gap: 1.15rem;
 
         li {
           display: flex;
           font-size: 1.6rem;
+          cursor: pointer;
         }
       }
     }
