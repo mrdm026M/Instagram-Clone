@@ -25,6 +25,14 @@ const story = [
     image: one,
     name: "Harshit",
   },
+  {
+    image: one,
+    name: "Dhruv",
+  },
+  {
+    image: one,
+    name: "Harshit",
+  },
 ];
 
 export default story;
