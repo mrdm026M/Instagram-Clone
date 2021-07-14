@@ -42,14 +42,18 @@ export const Profile = () => {
               <h2>Story Highlights</h2>
               <div className="content">
                 {Stories.map((story, index) => {
-                  return (
-                    <div className={index + " story"}>
-                      <div className="profile__img-box">
-                        <img src={story.image} alt="story" />
+                  if (index >= 5) {
+                    return null;
+                  } else {
+                    return (
+                      <div className={index + " story"}>
+                        <div className="profile__img-box">
+                          <img src={story.image} alt="story" />
+                        </div>
+                        <h2>{story.name}</h2>
                       </div>
-                      <h2>{story.name}</h2>
-                    </div>
-                  );
+                    );
+                  }
                 })}
               </div>
             </div>
